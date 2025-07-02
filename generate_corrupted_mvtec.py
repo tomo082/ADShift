@@ -9,7 +9,7 @@ item_list = ['carpet', 'bottle', 'hazelnut', 'leather', 'cable', 'capsule', 'gri
 for type_cor in ['brightness','contrast','defocus_blur','gaussian_noise']:
     for _class_ in item_list:
         path_orginal = '/home/ueno/mvtec-data' + _class_ + '/' + 'test' #path to the test set of original mvtec 
-        path = '/home/ueno/mvtec-data-shift'+type_cor+'/' + _class_ + '/' + 'test' #path to the corrupted mvtec 
+        path = '/home/ueno/mvtec-data'+type_cor+'/' + _class_ + '/' + 'test' #path to the corrupted mvtec 
         isExist = os.path.exists(path)
         if not isExist:
             os.makedirs(path)
